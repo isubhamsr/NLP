@@ -1,10 +1,13 @@
-'''
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun 15 16:56:03 2021
+
     @author: Subham Roy
     https://www.codeingschool.com/
-'''
+"""
 
 import nltk
-nltk.download('punkt')
+nltk.download('stopwords')
 
 paragraph = '''I have three visions for India. In 3000 years of our history, people from all over 
                the world have come and invaded us, captured our lands, conquered our minds. 
@@ -29,12 +32,23 @@ paragraph = '''I have three visions for India. In 3000 years of our history, peo
                space, Professor Satish Dhawan, who succeeded him and Dr. Brahm Prakash, father of nuclear material.
                I was lucky to have worked with all three of them closely and consider this the great opportunity of my life. 
                I see four milestones in my career'''
-              
-                
-#tokenizetion
+   
+#import Stemmer and Stopwords            
+from nltk.stem import PorterStemmer #Stemmer
+from nltk.corpus import stopwords   
+import re   
 
-#word Tokenizetion
-word_token = nltk.word_tokenize(paragraph)              
 
-#sentence Tokenizetion
-sent_token = nltk.sent_tokenize(paragraph)
+sentences = nltk.sent_tokenize(paragraph)
+stemmer = PorterStemmer()
+
+corpus = []
+
+#stemming
+for i in range(len(sentences)):
+    review = re.sub('[^a-zA-Z]', ' ', sentences[i])
+    review = review.lower()
+    review = review.split()
+    review = [stemmer.stem(word) for word in review if not word in set(stopwords.words('english'))]
+    review = ' '.join(review)
+    corpus.append(review)
