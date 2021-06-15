@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun 15 16:56:03 2021
+Created on Tue Jun 15 17:37:04 2021
 
     @author: Subham Roy
     https://www.codeingschool.com/
@@ -8,6 +8,7 @@ Created on Tue Jun 15 16:56:03 2021
 
 import nltk
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 paragraph = '''I have three visions for India. In 3000 years of our history, people from all over 
                the world have come and invaded us, captured our lands, conquered our minds. 
@@ -33,23 +34,23 @@ paragraph = '''I have three visions for India. In 3000 years of our history, peo
                I was lucky to have worked with all three of them closely and consider this the great opportunity of my life. 
                I see four milestones in my career'''
    
-#import Stemmer and Stopwords            
-from nltk.stem import PorterStemmer #Stemmer
+#import Lemmatization and Stopwords            
+from nltk.stem import WordNetLemmatizer #Lemmalizer
 from nltk.corpus import stopwords   
 import re   
 
 
 sentences = nltk.sent_tokenize(paragraph)
-stemmer = PorterStemmer()
+lemmatizer = WordNetLemmatizer()
 
 corpus = [] #store all the sentences
 
-#stemming
+#lemmatization
 for i in range(len(sentences)):
     review = re.sub('[^a-zA-Z]', ' ', sentences[i]) #keep only alphabets
     review = review.lower() #make the sentences lower
     review = review.split() #make the sentence in to words
-    # 1st remove stopwords form sentence and apply stemming
-    review = [stemmer.stem(word) for word in review if not word in set(stopwords.words('english'))]
+    # 1st remove stopwords form sentence and apply lemaatigation
+    review = [lemmatizer.lemmatize(word) for word in review if not word in set(stopwords.words('english'))]
     review = ' '.join(review) # join the words into sentences
     corpus.append(review) #append the sentencees inthe corpur
