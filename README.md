@@ -11,7 +11,7 @@ Natural language processing is a subfield artificial intelligence concerned with
   
 ## Learn NLP
 
-[Documentation](https://www.codeingschool.com/)
+[Read Now](https://www.codeingschool.com/p/nlp.html)
 
   
 ## Lessons Learned
