@@ -53,7 +53,7 @@ for i in range(len(sentences)):
     review = ' '.join(review) # join the words into sentences
     corpus.append(review) #append the sentencees inthe corpur
     
-#Create Bag of Words model
+#Create TF-IDF model
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 cv = TfidfVectorizer(max_features=1500)
