@@ -11,7 +11,11 @@ Natural language processing is a subfield artificial intelligence concerned with
   
 ## Learn NLP
 
+<<<<<<< HEAD
 [Documentation](https://www.codeingschool.com/)
+=======
+[Read Now](https://www.codeingschool.com/p/nlp.html)
+>>>>>>> 888458bedd515d0a28a7d5149f12e089b5d38ad8
 
   
 ## Lessons Learned
@@ -23,4 +27,8 @@ Natural language processing is a subfield artificial intelligence concerned with
 - [Bag of Words](https://www.codeingschool.com/)
 - [TF-IDF](https://www.codeingschool.com/)
 
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> 888458bedd515d0a28a7d5149f12e089b5d38ad8
