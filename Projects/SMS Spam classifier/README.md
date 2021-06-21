@@ -31,13 +31,25 @@ To read more details of this project [Read Here](https://codeingschool.com)
 
 #### Save ML Model
 - I saved the Random Forest model (which has high accuracy) for model deployment.
+
+
 ## Deployment
+- Deploy this project on the web, I create the `model_pickle.pkl` file for prodiction and `transform.pkl` for transform the new input text.
+- In `ClassificationfromUserInput.py` file you can prodict Ham or Spam with new text.
+- Web live demo [Click Here](https://subhamroy.netlify.app/) 
 
-- Deploy this project on the web, to predict new texts that it is Spam or Ham. 
-- I use Heroku to host the backend (Django) and Netlify to host frontend (React Js)
-[View Here](https://codeingschool.com)
+#### Technology Used
 
-  
+- `Django` for backend and host the model
+- `React Js` for frontend
+- `MongoDb` as database
+- `Heroku` for host the backend
+- `netlify` for host the frontend
+
+#### Deployment Architecture
+
+![Deployment Architecture](https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624268730/Web_1280_1_mncmry.png)
+
 ## Authors
 
 - [@isubhamsr](https://subhamroy.netlify.app/)
