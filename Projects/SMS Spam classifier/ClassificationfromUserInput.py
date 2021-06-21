@@ -6,6 +6,7 @@ Created on Fri Jun 18 21:29:55 2021
     https://www.codeingschool.com/
 """
 import pickle
+import re
 filename = 'model_pickle.pkl'
 clf = pickle.load(open(filename, 'rb'))
 cv=pickle.load(open('transform.pkl','rb'))
@@ -17,6 +18,7 @@ cv=pickle.load(open('transform.pkl','rb'))
 '''
 
 message = input("Enter message to check Ham or Spam: ")
+message = re.sub('[^a-zA-Z]', ' ', message) # remove pantuations
 data = [message]
 vect = cv.transform(data).toarray()
 my_prediction = clf.predict(vect)
