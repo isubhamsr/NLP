@@ -14,6 +14,7 @@ massages = pd.read_csv('./DataSet/SMSSpamCollection.csv', sep='\t', names=["labe
 
 import re
 import nltk
+import pickle
 
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -45,8 +46,11 @@ y = y.iloc[:,1].values
 #apply TF-IDF model
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-cv = TfidfVectorizer(max_features=6000, ngram_range=(2,2))
-X = cv.fit_transform(corpus).toarray()    
+tf = TfidfVectorizer(max_features=6000, ngram_range=(2,2))
+X = tf.fit_transform(corpus).toarray()  
+
+filename = 'transform.pkl'
+pickle.dump(tf, open(filename, 'wb'))  
 
 #train Test Split
 from sklearn.model_selection import train_test_split
@@ -92,6 +96,5 @@ accuracy_SVM = accuracy_score(y_test, y_pred_SVM)
 
 
 #save the model
-import pickle
 filename = 'model_pickle.pkl'
 pickle.dump(spam_detect_model_RF, open(filename, 'wb'))
