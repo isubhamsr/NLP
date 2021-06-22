@@ -9,7 +9,7 @@ SMS Spam Classifier using Natural Language Processing, with help of machine lear
 
 ## In Details
 
-To read more details of this project [Read Here](https://codeingschool.com)
+To read more details of this project [Read Here](https://www.codeingschool.com/2021/06/sms-spam-classifier-with-nlp-with-deployment-code.html)
 
   
 ## Roadmap of the Project
@@ -39,7 +39,7 @@ To read more details of this project [Read Here](https://codeingschool.com)
 ## Deployment
 - Deploy this project on the web, I create the `model_pickle.pkl` file for prodiction and `transform.pkl` for transform the new input text.
 - In `ClassificationfromUserInput.py` file you can prodict Ham or Spam with new text.
-- Web live demo [Click Here](https://subhamroy.netlify.app/) 
+- Web live demo [Click Here](https://subhamroy.netlify.app/project/sms-span-classification) 
 
 #### Technology Used
 
