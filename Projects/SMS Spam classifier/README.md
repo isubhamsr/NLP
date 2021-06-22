@@ -4,6 +4,9 @@
 SMS Spam Classifier using NLP. Machine Learning Algorithm used Naive Bayes, Random Forest, SVM
 
 
+## Project Goal
+SMS Spam Classifier using Natural Language Processing, with help of machine learning. Here we can predict a message Spam or not. It helps us to protect from potential scams.
+
 ## In Details
 
 To read more details of this project [Read Here](https://codeingschool.com)
