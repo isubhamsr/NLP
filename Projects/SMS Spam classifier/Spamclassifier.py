@@ -22,7 +22,6 @@ nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer #Lemmalizer
 from nltk.stem import PorterStemmer #Stemmer
 from nltk.corpus import stopwords   
-import re   
 
 ps = PorterStemmer()
 wn = WordNetLemmatizer()
