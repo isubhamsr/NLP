@@ -55,6 +55,4 @@ To read more details of this project [Read Here](https://www.codeingschool.com/2
 
 ## Authors
 
-- [@isubhamsr](https://subhamroy.netlify.app/)
-
-  
+- [@Subham Roy](https://subhamroy.netlify.app/)
