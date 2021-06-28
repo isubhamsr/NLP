@@ -17,6 +17,9 @@ To read more details of this project [Read Here](https://www.codeingschool.com/2
 #### Data collection
 
 - I have used the Kaggle dataset. You can directly download it from [Here](https://github.com/isubhamsr/NLP/tree/master/Projects/Predict%20Stock%20Price%20Movement%20Based%20On%20News%20Headline%20(Kaggle%20Competition)/DataSet).
+- There are 25 columns of top news headlines for each day in the data frame
+- Class 1 -> The stock price increased
+- Class 0 -> the stock price stayed the same or decreased
 
 #### Data Cleaning
 
