@@ -1,7 +1,7 @@
 
 # Predict Stock Price Movement Based On News Headline
 
-Predict Stock Price Movement Based On News Headline using NLP. Machine Learning Algorithm used Naive Bayes, Random Forest
+Predict Stock Price Movement Based On News Headline using NLP. Machine Learning Algorithm used Naive Bayes, Random Forest, SVM
 
 
 ## Project Goal
@@ -34,7 +34,7 @@ To read more details of this project [Read Here](https://www.codeingschool.com/2
 Note: Prefered use ngram_range (2,2 or 4,4) for better accuracy. I got mmory error because I have 8gb of RAM this is not enough for this amont of data
   
 #### Creating ML Model
-- I create two machine learning models. Models are Naive Bayes, Random Forest.
+- I create three machine learning models. Models are Naive Bayes, Random Forest, SVM.
 - So we can observe that Random Forest has the highest accuracy among the algorithms.
 
 #### Save ML Model
