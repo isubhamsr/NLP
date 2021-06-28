@@ -1,7 +1,7 @@
 
 # Predict Stock Price Movement Based On News Headline
 
-Predict Stock Price Movement Based On News Headline using NLP. Machine Learning Algorithm used Naive Bayes, Random Forest, SVM
+Predict Stock Price Movement Based On News Headline using NLP (Kaggle Competition). Machine Learning Algorithm used Naive Bayes, Random Forest, SVM
 
 
 ## Project Goal
