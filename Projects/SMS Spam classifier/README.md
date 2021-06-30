@@ -51,7 +51,7 @@ To read more details of this project [Read Here](https://www.codeingschool.com/2
 
 #### Deployment Architecture
 
-![Deployment Architecture](https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624268730/Web_1280_1_mncmry.png)
+![Deployment Architecture](https://res.cloudinary.com/dkcwzsz7t/image/upload/v1625037907/Web_1280_1_tl52ju.png)
 
 ## Authors
 
