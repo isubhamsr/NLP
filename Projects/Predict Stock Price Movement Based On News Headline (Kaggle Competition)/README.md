@@ -56,7 +56,7 @@ Note: Prefered use ngram_range (2,2 or 4,4) for better accuracy. I got mmory err
 
 #### Deployment Architecture
 
-![Deployment Architecture](https://res.cloudinary.com/dkcwzsz7t/image/upload/v1624268730/Web_1280_1_mncmry.png)
+![Deployment Architecture](https://res.cloudinary.com/dkcwzsz7t/image/upload/v1625037907/Web_1280_1_tl52ju.png)
 
 ## Authors
 
